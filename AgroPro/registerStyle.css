@@ -1,0 +1,230 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 99;
+    background: transparent;
+}
+.header .nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+.header .search input{
+    background: transparent;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding-left: 10px;
+    right: 100px;
+    outline: none;
+    color: #fff;
+}
+.header .search i{
+    position: absolute;
+    right: 110px;
+    top: 22px;
+    color: #fff;
+}
+
+.background{
+    width: 100%;
+    height: 150vh;
+    background-image: url('image/rback.jpg');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.home{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    right: 15%;
+    width: 80%;
+    height: 85%;
+    transform: translate(-50 , -50%);
+    background-image: url('image/rback.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid rgb(146, 26, 110);
+    border-radius: 10px;
+    border: none; 
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    padding: 100px 0;
+}
+.content a{
+    position: relative;
+    text-decoration:none ;
+    color: #360238;
+    font-size: 3em;
+    font-weight: 700;
+    top: -40px;
+    left: 40px;
+}
+.content h2{
+    font-size: 3.5em;
+    text-align: center;
+    color: #7a086b;
+}
+.content h3{
+    font-size: 2em;
+    text-align: center;
+    color: #7a086b;
+}
+.content pre{
+    margin-top: 65px;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+}
+.content .icon{
+    margin-top: 20px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+.content .icon i{
+    margin-left: 20px;
+    color: #fff;
+}
+.login{
+    width: 450px;
+    position: relative;
+    padding: 100px 30px;
+    backdrop-filter: blur(20px);
+}
+.login h2{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.login .input{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 40px;
+    background: transparent;
+    color: #fff;
+}
+.login.input.input1{
+    position: relative;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    
+}
+
+
+::placeholder{
+    color: #e2d2ba;
+    font-size: 18px;
+}
+.login.input i{
+    position: relative;
+    right: -300px;
+    bottom: 27px;
+    color: #080808;
+    width: 90%;
+}
+.login select{
+    position: relative;
+    width: 80%;
+    height: 30px;
+    margin-bottom: 40px;
+    background: transparent;
+    color: #070707;
+}
+
+.check{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    color: #fff;
+}
+.check a{
+    text-decoration: none;
+    color: #fff;
+}
+.check a:hover{
+    text-decoration: underline;
+}
+.login .button{
+    width: 30%;
+    height: 40px;
+    margin-bottom: 15px;
+}
+.button{
+    width: 30%;
+    height: 40px;
+    align-items: center;
+    background-color: rgb(189, 61, 206);
+    border: #f1f0f1;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 7px;
+    color: #f3f1f3;
+}
+.button btn{
+    text-align: center;
+}
+.button:active{
+    font-size: 25px;
+    background-color: green;
+}
+
+.login .sign-up{
+    display: flex;
+    justify-content: center;
+}
+.login .sign-up a{
+    text-decoration: none;
+    color: #f1f0f1;
+    font-weight: 700;
+}
+.login .sign-up p{
+    color: #fff;
+}
+.sign-up a:hover{
+    text-decoration: underline;
+    margin: 2px;
+}
+.login .error-msg{
+    margin: 10px 0;
+    display: block;
+    background: crimson;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
